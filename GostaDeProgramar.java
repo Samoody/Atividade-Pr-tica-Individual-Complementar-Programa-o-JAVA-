@@ -2,7 +2,8 @@
  * RA: 12123150
  * AUTOR: SAMUEL KLEBER VIEIRA SILVA
  * DATA: 23/04/2025
-  * Descrição: Programa que pergunta ao usuário se ele gosta de programar e exibe a resposta booleana com explicação.
+ * 
+ * Descrição: Programa que pergunta ao usuário se ele gosta de programar e exibe a resposta booleana com explicação.
  */
 
 import java.util.Scanner;
@@ -18,4 +19,13 @@ public class GostaDeProgramar {
 
         // Exibindo a resposta e explicando com base no valor booleano
         System.out.print("Resposta recebida: " + gostaDeProgramar + ". ");
-        if (gostaDeProgramar)
+        if (gostaDeProgramar) {
+            System.out.print("Que ótimo! Programar é uma habilidade incrível!");
+        } else {
+            System.out.print("Tudo bem! Talvez você descubra um interesse com o tempo.");
+        }
+
+        // Fechando o Scanner
+        scanner.close();
+    }
+}
